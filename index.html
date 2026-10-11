@@ -1,92 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Página acadêmica pública do Professor Doutor Celso Antonio Pacheco Fiorillo.">
-<meta name="theme-color" content="#173653">
-<title>Prof. Dr. Celso Antonio Pacheco Fiorillo | Página acadêmica</title>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Página acadêmica pública do Professor Doutor Celso Antonio Pacheco Fiorillo."><meta name="theme-color" content="#173653"><title>Prof. Dr. Celso Antonio Pacheco Fiorillo | Página acadêmica</title>
 <style>
-:root{color-scheme:light;--navy:#173653;--blue:#245b82;--ink:#202a34;--muted:#566575;--line:#d7e0e8;--paper:#fff;--wash:#f3f6f9}
-*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.65}
-.wrap{max-width:980px;margin:0 auto;padding:24px}
-.topbar{display:flex;justify-content:flex-end;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.lang-label{font-size:.9rem;color:var(--muted);margin-right:4px}
-.lang-button{border:1px solid #b9c8d5;background:#fff;color:var(--navy);padding:8px 12px;border-radius:7px;font:inherit;font-size:.92rem;cursor:pointer}
-.lang-button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
-.lang-button:focus-visible,a:focus-visible{outline:3px solid #e3a72f;outline-offset:3px}
-header{background:var(--navy);color:white;padding:clamp(26px,5vw,48px);border-radius:14px}
-header h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.2;margin:0 0 16px}
-header p{margin:8px 0;color:#edf3f8}
-main{background:var(--paper);padding:clamp(22px,4vw,38px);margin-top:20px;border:1px solid var(--line);border-radius:14px}
-h2{color:var(--navy);font-size:1.5rem;margin:0 0 8px}h3{color:var(--navy);font-size:1.12rem;margin:0 0 8px}
-.intro{color:var(--muted);margin-top:0}
-.documento{border:1px solid var(--line);border-radius:10px;padding:20px;margin:16px 0;background:#fff}
-.documento p{margin:8px 0}
-a{color:#075b94;text-underline-offset:3px;font-weight:600;overflow-wrap:anywhere}
-.sources{padding-left:22px}.sources li{margin:9px 0}
-section+section{margin-top:28px}
-footer{color:var(--muted);font-size:.92rem;text-align:center;padding:22px 8px 8px}
-@media(max-width:560px){.wrap{padding:12px}.topbar{justify-content:flex-start}.lang-label{width:100%}.lang-button{padding:7px 9px}header,main{border-radius:10px}.documento{padding:15px}}
-</style>
-</head>
-<body>
-<div class="wrap">
-<nav class="topbar" aria-label="Language selector">
-<span class="lang-label" id="language-label">Idioma / Language:</span>
-<button class="lang-button" type="button" data-lang="pt" aria-pressed="true">Português</button>
-<button class="lang-button" type="button" data-lang="en" aria-pressed="false">English</button>
-<button class="lang-button" type="button" data-lang="es" aria-pressed="false">Español</button>
-<button class="lang-button" type="button" data-lang="zh" aria-pressed="false">中文</button>
-<button class="lang-button" type="button" data-lang="no" aria-pressed="false">Norsk</button>
-</nav>
-<header>
-<h1>Prof. Dr. Celso Antonio Pacheco Fiorillo</h1>
-<p data-i18n="role">Professor, pesquisador e autor de obras jurídicas.</p>
-<p data-i18n="fields">Direito Ambiental Constitucional, Direito Empresarial Ambiental e Direito na Sociedade da Informação.</p>
-</header>
-<main>
-<section aria-labelledby="memorials-heading">
-<h2 id="memorials-heading" data-i18n="memorials">Memoriais acadêmicos</h2>
-<p class="intro" data-i18n="intro">Consulte os documentos acadêmicos disponibilizados publicamente:</p>
-<article class="documento">
-<h3 data-i18n="doc1title">Memorial acadêmico — outubro de 2026</h3>
-<p data-i18n="doc1desc">Documento com informações sobre trajetória acadêmica, pesquisa, produção bibliográfica e atuação institucional.</p>
-<p><a href="MEMORIAL%20celso%20fiorillo%20informa%C3%A7%C3%B5es%20publicas%20outubro%202026.docx" data-i18n="doc1link">Acessar o memorial em Word</a></p>
-</article>
-<article class="documento">
-<h3 data-i18n="doc2title">Memorial acadêmico em cinco línguas</h3>
-<p data-i18n="doc2desc">Documento multilíngue disponibilizado para consulta pública.</p>
-<p><a href="memorial%20cinco%205%20linguas.docx" data-i18n="doc2link">Acessar o memorial multilíngue em Word</a></p>
-</article>
-</section>
-<section aria-labelledby="sources-heading">
-<h2 id="sources-heading" data-i18n="sources">Fontes acadêmicas públicas</h2>
-<ul class="sources">
-<li><a href="http://lattes.cnpq.br/2325230608192870" target="_blank" rel="noopener noreferrer" data-i18n="lattes">Currículo Lattes — CNPq</a></li>
-<li><a href="https://scholar.google.com/citations?hl=pt-BR&amp;user=WzNy2L4AAAAJ" target="_blank" rel="noopener noreferrer" data-i18n="scholar">Perfil no Google Acadêmico</a></li>
-</ul>
-</section>
-</main>
-<footer data-i18n="disclaimer">Página de divulgação acadêmica. Consulte as fontes indicadas para verificar informações curriculares e bibliográficas.</footer>
-</div>
-<script>
-const translations = {
-pt:{html:"pt-BR",language:"Idioma:",role:"Professor, pesquisador e autor de obras jurídicas.",fields:"Direito Ambiental Constitucional, Direito Empresarial Ambiental e Direito na Sociedade da Informação.",memorials:"Memoriais acadêmicos",intro:"Consulte os documentos acadêmicos disponibilizados publicamente:",doc1title:"Memorial acadêmico — outubro de 2026",doc1desc:"Documento com informações sobre trajetória acadêmica, pesquisa, produção bibliográfica e atuação institucional.",doc1link:"Acessar o memorial em Word",doc2title:"Memorial acadêmico em cinco línguas",doc2desc:"Documento multilíngue disponibilizado para consulta pública.",doc2link:"Acessar o memorial multilíngue em Word",sources:"Fontes acadêmicas públicas",lattes:"Currículo Lattes — CNPq",scholar:"Perfil no Google Acadêmico",disclaimer:"Página de divulgação acadêmica. Consulte as fontes indicadas para verificar informações curriculares e bibliográficas."},
-en:{html:"en",language:"Language:",role:"Professor, researcher, and author of legal works.",fields:"Constitutional Environmental Law, Environmental Business Law, and Law in the Information Society.",memorials:"Academic memorials",intro:"Consult the academic documents made publicly available:",doc1title:"Academic memorial — October 2026",doc1desc:"Document containing information on academic career, research, publications, and institutional activities.",doc1link:"Open the memorial in Word",doc2title:"Academic memorial in five languages",doc2desc:"Multilingual document made available for public consultation.",doc2link:"Open the multilingual memorial in Word",sources:"Public academic sources",lattes:"Lattes CV — CNPq",scholar:"Google Scholar profile",disclaimer:"Academic information page. Consult the linked sources to verify curriculum and publication details."},
-es:{html:"es",language:"Idioma:",role:"Profesor, investigador y autor de obras jurídicas.",fields:"Derecho Ambiental Constitucional, Derecho Empresarial Ambiental y Derecho en la Sociedad de la Información.",memorials:"Memoriales académicos",intro:"Consulte los documentos académicos disponibles públicamente:",doc1title:"Memorial académico — octubre de 2026",doc1desc:"Documento con información sobre trayectoria académica, investigación, producción bibliográfica y actividad institucional.",doc1link:"Abrir el memorial en Word",doc2title:"Memorial académico en cinco idiomas",doc2desc:"Documento multilingüe disponible para consulta pública.",doc2link:"Abrir el memorial multilingüe en Word",sources:"Fuentes académicas públicas",lattes:"Currículum Lattes — CNPq",scholar:"Perfil en Google Académico",disclaimer:"Página de divulgación académica. Consulte las fuentes indicadas para verificar la información curricular y bibliográfica."},
-zh:{html:"zh-CN",language:"语言：",role:"教授、研究人员及法律著作作者。",fields:"宪法环境法、环境商法以及信息社会中的法律。",memorials:"学术履历",intro:"请查阅以下公开提供的学术文件：",doc1title:"学术履历——2026年10月",doc1desc:"介绍学术经历、研究、出版成果及机构工作情况的文件。",doc1link:"打开 Word 格式学术履历",doc2title:"五种语言版本的学术履历",doc2desc:"供公众查阅的多语言文件。",doc2link:"打开多语言 Word 文件",sources:"公开学术资料",lattes:"Lattes 学术简历 — CNPq",scholar:"Google Scholar 学术档案",disclaimer:"学术信息页面。请查阅所列来源，以核实履历和出版信息。"},
-no:{html:"nb",language:"Språk:",role:"Professor, forsker og forfatter av juridiske verk.",fields:"Konstitusjonell miljørett, miljørett innen næringslivet og rett i informasjonssamfunnet.",memorials:"Akademiske presentasjoner",intro:"Se de akademiske dokumentene som er gjort offentlig tilgjengelige:",doc1title:"Akademisk presentasjon — oktober 2026",doc1desc:"Dokument med informasjon om akademisk bakgrunn, forskning, publikasjoner og institusjonell virksomhet.",doc1link:"Åpne dokumentet i Word",doc2title:"Akademisk presentasjon på fem språk",doc2desc:"Flerspråklig dokument tilgjengelig for offentlig innsyn.",doc2link:"Åpne det flerspråklige Word-dokumentet",sources:"Offentlige akademiske kilder",lattes:"Lattes-CV — CNPq",scholar:"Google Scholar-profil",disclaimer:"Akademisk informasjonsside. Se de oppgitte kildene for å kontrollere CV- og publikasjonsopplysninger."}
-};
-function setLanguage(lang){
- const t=translations[lang]||translations.pt;
- document.documentElement.lang=t.html;
- document.title="Prof. Dr. Celso Antonio Pacheco Fiorillo | "+({pt:"Página acadêmica",en:"Academic page",es:"Página académica",zh:"学术主页",no:"Akademisk side"}[lang]);
- document.getElementById("language-label").textContent=t.language;
- document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.getAttribute("data-i18n");if(t[key])el.textContent=t[key]});
- document.querySelectorAll("[data-lang]").forEach(btn=>btn.setAttribute("aria-pressed",String(btn.dataset.lang===lang)));
-}
-document.querySelectorAll("[data-lang]").forEach(btn=>btn.addEventListener("click",()=>setLanguage(btn.dataset.lang)));
-</script>
-</body>
-</html>
+*{box-sizing:border-box}body{margin:0;background:#f3f6f9;color:#202a34;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.65}.wrap{max-width:980px;margin:0 auto;padding:24px}.topbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}.topbar span{color:#566575;margin-right:4px}.topbar a{display:inline-block;border:1px solid #b9c8d5;border-radius:7px;padding:7px 12px;background:#fff;color:#173653;text-decoration:none;font-size:.95rem}.topbar a[aria-current=page]{background:#173653;color:white;border-color:#173653}header{background:#173653;color:white;padding:clamp(26px,5vw,48px);border-radius:14px}header h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.2;margin:0 0 16px}header p{margin:8px 0;color:#edf3f8}main{background:#fff;padding:clamp(22px,4vw,38px);margin-top:20px;border:1px solid #d7e0e8;border-radius:14px}h2,h3{color:#173653}h2{font-size:1.5rem;margin:0 0 8px}h3{font-size:1.12rem;margin:0 0 8px}.intro{color:#566575;margin-top:0}.documento{border:1px solid #d7e0e8;border-radius:10px;padding:20px;margin:16px 0;background:#fff}.documento p{margin:8px 0}a{color:#075b94;text-underline-offset:3px;overflow-wrap:anywhere}.documento a,.sources a{font-weight:650}.sources{padding-left:22px}.sources li{margin:9px 0}section+section{margin-top:28px}footer{color:#566575;font-size:.92rem;text-align:center;padding:22px 8px 8px}@media(max-width:560px){.wrap{padding:12px}.topbar{gap:7px}.topbar a{padding:7px 9px}header,main{border-radius:10px}.documento{padding:15px}}
+</style></head>
+<body><div class="wrap">
+<nav class="topbar" aria-label="Idioma / Language"><span>Idioma / Language:</span><a href="index.html" aria-current="page">Português</a><a href="en.html">English</a><a href="es.html">Español</a><a href="zh.html">中文</a><a href="no.html">Norsk</a></nav>
+<header><h1>Prof. Dr. Celso Antonio Pacheco Fiorillo</h1><p>Professor, pesquisador e autor de obras jurídicas.</p><p>Direito Ambiental Constitucional, Direito Empresarial Ambiental e Direito na Sociedade da Informação.</p></header>
+<main><section><h2>Memoriais acadêmicos</h2><p class="intro">Consulte os documentos acadêmicos disponibilizados publicamente:</p>
+<article class="documento"><h3>Memorial acadêmico — outubro de 2026</h3><p>Documento com informações sobre trajetória acadêmica, pesquisa, produção bibliográfica e atuação institucional.</p><p><a href="MEMORIAL%20celso%20fiorillo%20informa%C3%A7%C3%B5es%20publicas%20outubro%202026.docx">Acessar o memorial em Word</a></p></article>
+<article class="documento"><h3>Memorial acadêmico em cinco línguas</h3><p>Documento multilíngue disponibilizado para consulta pública.</p><p><a href="memorial%20cinco%205%20linguas.docx">Acessar o memorial multilíngue em Word</a></p></article></section>
+<section><h2>Fontes acadêmicas públicas</h2><ul class="sources"><li><a href="http://lattes.cnpq.br/2325230608192870" target="_blank" rel="noopener noreferrer">Currículo Lattes — CNPq</a></li><li><a href="https://scholar.google.com/citations?hl=pt-BR&amp;user=WzNy2L4AAAAJ" target="_blank" rel="noopener noreferrer">Perfil no Google Acadêmico</a></li></ul></section></main>
+<footer>Página de divulgação acadêmica. Consulte as fontes indicadas para verificar informações curriculares e bibliográficas.</footer></div></body></html>
